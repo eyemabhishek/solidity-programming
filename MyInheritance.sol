@@ -9,6 +9,7 @@ contract MyInheritance_A {
 
 contract MyInheritance_B is MyInheritance_A {
     
+    // virtual - A function that allows an inheriting contract to override its behavior will be marked at virtual . The function that overrides that base function should be marked as override
     function getName() public view virtual returns (string memory) {
         return name;
     }
